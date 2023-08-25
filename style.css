@@ -92,7 +92,7 @@ h3 {
 }
 
 #portfolio li:hover {
-    background: #ffffff;
+    background: rgb(255, 128, 128);
 }
 
 #portfolio a {
