@@ -3,7 +3,7 @@ body {
 }
 
 canvas {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMmxw2JF7gTlm_fN5BT95I2wLfXEHWjY1H8Q:https://static.planetminecraft.com/files/image/minecraft/texture-pack/2021/167/14054807_l.jpg&usqp=CAU");
+  background-image: url(images/cherryGrove.jpg);
   background-size: cover;
 }
 
