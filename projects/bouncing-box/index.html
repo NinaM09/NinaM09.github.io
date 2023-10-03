@@ -7,11 +7,10 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
-			width: 70px;
-			height: 70px;
+			width: 100px;
+			height: 100px;
 			background-image: url(img/flyingPig.png);
 			background-size: cover;
-			background-color: rgb(241, 166, 166);
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -23,6 +22,8 @@
 		}
 
 		.board {
+			background-image: url(img/cloudsForPig.jpg);
+			background-size: cover;
 			height: 100vh;
 		}
 	</style>
@@ -75,7 +76,7 @@
 			var points = 0;
 			var speed = 10;
 			var positionY = 0;
-			var speedY = 10;
+			var speedY = 15;
 
 
 			var colorStr = "rgb(" + randomNumberBetween0and255 + ", " + randomNumberBetween0and255 + ", " + randomNumberBetween0and255 + ")";
@@ -91,12 +92,13 @@
 				positionX = positionX + speed;
 				if (positionX > boardWidth) {
 					speed = -speed;
+				
 				}
 				if (positionX < 0) {
 					speed = -speed;
 				}
 				positionY = positionY + speedY;
-				if (positionY > boardHeight); {
+				if (positionY > boardHeight) {
 					speedY *= -1;
 				}
 				if (positionY < 0) {
@@ -119,6 +121,7 @@
 				if (points % 3 === 0) {
 					speed += 3;
 					box.css('background-color', colorStr);
+					
 				}
 			};
 		})();
