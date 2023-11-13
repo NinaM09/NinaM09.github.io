@@ -108,33 +108,34 @@
 
 				moveBoxTo(positionX, positionY);
 
+			}
 
-
-				/* 
-				This Function will be called each time the box is clicked. Each time it is called,
-				it should increase the points total, increase the speed, and move the box to
-				the left side of the screen.
-				*/
-				function handleBoxClick() {
-					positionX = randNumX;
-					points = points + 1;
-					changeBoxText(points);
-					if (points % 3 === 0) {
-						box.css('background-color', colorStr);
-
-					}
-					if (points % 2 === 0) {
-						if (speed > 0) {
-							speed += 3;
-						}
-						if (speed < 0) {
-							speed -= 3;
-						}
-					}
-				};
-
+			/* 
+			This Function will be called each time the box is clicked. Each time it is called,
+			it should increase the points total, increase the speed, and move the box to
+			the left side of the screen.
+			*/
+			function handleBoxClick() {
+				positionX = randNumX;
+				points = points + 1;
+				changeBoxText(points);
+				if (points % 3 === 0) {
+					box.css('background-color', colorStr);
+					// if (speed > 0) {
+					// 	speed += 3;
+					// }
+					// if (speed < 0) {
+					// 	speed -= 3;
+					// }
+				}
 			};
-		})();
+
+
+
+
+
+		
+		}) ();
 	</script>
 </body>
 
