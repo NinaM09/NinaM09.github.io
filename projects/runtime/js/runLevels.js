@@ -29,7 +29,7 @@ var runLevels = function (window) {
       sawBladeHitZone.y = y;
       game.addGameItem(sawBladeHitZone);
       //5C
-      var obstacleImage = draw.bitmap("img/pig.png");
+      var obstacleImage = draw.bitmap("img/sawblade.png");
       obstacleImage.x * -1 / 16 + 14
       obstacleImage.y * -1 / 22
       sawBladeHitZone.addChild(obstacleImage);
