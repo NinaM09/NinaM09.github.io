@@ -43,8 +43,14 @@ var background = function (window) {
             // TODO 1:
             // this currently fills the background with an obnoxious yellow;
             // you should modify both the height and color to suit your game
-            var backgroundFill = draw.bitmap('img/pink clouds runtime.jpg');
+            var backgroundFill = draw.bitmap("img/pink clouds runtime.jpg");
             background.addChild(backgroundFill);
+            backgroundFill.x = 0;
+            backgroundFill.y = 0;
+            backgroundFill.scaleX = 2.60;
+            backgroundFill.scaleY = 2.25;
+
+    
 
 
             // TODO 2: - Add a moon and starfield
@@ -72,7 +78,7 @@ var background = function (window) {
                 buildings.push(building);
             }
             // TODO 3: Part 1 - Add a tree
-            tree = draw.bitmap("img/tree.png");
+            tree = draw.bitmap("img/mountains.png");
             tree.x = 0;
             tree.y = groundY + 20;
             background.addChild(tree);
@@ -90,7 +96,7 @@ var background = function (window) {
             var groundY = ground.y;
 
             // TODO 3: Part 2 - Move the tree!
-            tree.x = tree.x - 7;
+            tree.x = tree.x - 3;
 
             if (tree.x < -200) {
                 tree.x = canvasWidth;
@@ -103,10 +109,10 @@ var background = function (window) {
 
 
             for (var i = 0; i < buildings.length; i++) {
-                var eachElement = buildings[i];
-                eachElement.x = eachElement.x - 1;
-                if (eachElement.x < -200) {
-                    eachElement.x = canvasWidth;
+                var builds = buildings[i];
+                builds.x = builds.x - 1;
+                if (builds.x < -200) {
+                    builds.x = canvasWidth;
                 }
 
             }

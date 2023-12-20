@@ -21,7 +21,7 @@ var init = function (window) {
     playerManager,
     particleManager;
 
-  var debugHalleHitZones = true;
+  var debugHalleHitZones = false;
 
   space = app.space;
   (rules = app.rules),

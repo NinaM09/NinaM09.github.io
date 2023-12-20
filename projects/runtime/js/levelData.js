@@ -18,8 +18,10 @@ var makeLevelData = function (window) {
           { type: "sawblade", x: 400, y: groundY },
           { type: "sawblade", x: 600, y: groundY },
           { type: "sawblade", x: 900, y: groundY },
-          { type: "reward", "x": 2000, "y": groundY - 60},
-          { type: "enemy", "x": 2000, "y": groundY - 60},
+          { type: "reward", "x": 1300, "y": groundY - 250},
+          { type: "enemy", "x": 1100, "y": groundY - 250},
+          { type: "enemy", "x": 1200, "y": groundY - 250},
+          { type: "marker", "x": 1500, "y": groundY - 250},
         ],
       },
       {
@@ -30,25 +32,34 @@ var makeLevelData = function (window) {
           { type: "sawblade", x: 400, y: groundY },
           { type: "sawblade", x: 600, y: groundY },
           { type: "sawblade", x: 900, y: groundY },
-          { type: "reward", "x": 2000, "y": groundY - 60},
-          { type: "enemy", "x": 2000, "y": groundY - 60},
+          { type: "reward", "x": 1300, "y": groundY - 250},
+          { type: "enemy", "x": 1200, "y": groundY - 250},
+          {type: "enemy", "x": 1100, "y": groundY - 250},
+          { type: "enemy", "x": 1000, "y": groundY - 250},
+          { type: "marker", "x": 1500, "y": groundY - 250},
         ],
       },
       { name: "Robot Rampage",
-        number: 2,
+        number: 3,
         speed: -3,
         gameItems: [
           { type: "sawblade", x: 400, y: groundY },
           { type: "sawblade", x: 600, y: groundY },
-          { type: "sawblade", x: 900, y: groundY },
-          { type: "reward", "x": 2000, "y": groundY - 60},
-          { type: "enemy", "x": 2000, "y": groundY - 60},
+          { type: "sawblade", x: 650, y: groundY },
+          { type: "reward", "x": 1400, "y": groundY - 250},
+          { type: "enemy", "x": 900, "y": groundY - 250},
+          { type: "enemy", "x": 1000, "y": groundY - 250},
+          { type: "enemy", "x": 1100, "y": groundY - 250},
+          { type: "enemy", "x": 1200, "y": groundY - 250},
+          { type: "enemy", "x": 1300, "y": groundY - 250},
+          { type: "marker", "x": 1500, "y": groundY - 250},
         ],
       }
     ];
     window.opspark.levelData = levelData;
   };
 };
+
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if (
